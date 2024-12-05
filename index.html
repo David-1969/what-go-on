@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Álbum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header principal -->
+    <header class="header-bar">
+        Compact-Disc @
+    </header>
+
+    <!-- Navegação com a barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Página Inicial</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Pesquisa</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Categorias</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Populares</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sair</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main com informações detalhadas do álbum -->
+    <main class="container mt-5">
+        <div class="row">
+            <!-- Imagem do álbum em formato maior -->
+            <div class="col-md-6">
+                <img id="albumImage" src="gaye.jpeg" alt="Imagem do Álbum" class="img-fluid">
+            </div>
+            <!-- Título e sinopse do álbum -->
+  <h2 id="albumTitle"> What's Going On</h2>
+  <p id="albumDescription"> What's Going On, lançado em 1971 por Marvin Gaye, é um álbum revolucionário que mistura soul, jazz, funk e R&B com um forte conteúdo social e político. A obra aborda temas como a desigualdade racial, a guerra do Vietnã, os direitos civis e a crise social, refletindo as tensões da época. A faixa-título e canções como "Mercy Mercy Me (The Ecology)" são exemplares da sensibilidade de Gaye em lidar com questões profundas e universais de forma lírica e musicalmente sofisticada. What's Going On não só transformou o soul, mas também se tornou um dos álbuns mais importantes da música pop. Sua sonoridade inovadora e mensagem emocional tornaram-no um clássico atemporal. O álbum continua sendo um ícone de resistência e reflexão social.</p>
+ <h2 id="albumTitle">Tracklist</h2>
+ <p id="albumDescription"> <strong>Lado 1:</strong> What's Going On -
+    What's Happening Brother - 
+    Flyin' High (In the Friendly Sky) -
+    Save the Children -
+    God Is Love.
+    <p id="albumDescription"> <strong>Lado 2:</strong> Mercy Mercy Me (The Ecology) -
+        Right On -
+        Wholy Holy -
+        Inner City Blues (Make Me Wanna Holler). </p>
+
+            <div class="col-md-6">
+                <!-- Resumo do álbum -->
+                <h2 id="albumTitle"></h2>
+                <p id="albumDescription"></p>
+
+                <div class="container mt-5">
+                    <h2>Avalie o Álbum</h2>
+            
+                    <!-- Sistema de avaliação de estrelas -->
+                    <div id="starRating" class="d-flex">
+                        <!-- Estrelas serão geradas dinamicamente com JavaScript -->
+                    </div>
+                    <div id="ratingMessage" class="mt-2"></div>
+            
+                    <h4 class="mt-4">Resenha:</h4>
+                    <textarea id="reviewText" class="form-control" rows="4"></textarea>
+                    <button id="submitReview" class="btn btn-primary mt-2">Enviar Resenha</button>
+            
+                    <h4 class="mt-4">Resenhas:</h4>
+                    <div id="reviewsList">
+                        <!-- Resenhas serão exibidas aqui -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
